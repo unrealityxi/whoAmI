@@ -1,6 +1,7 @@
 var express = require("express");
 var engines = require("consolidate");
 var path = require("path");
+var url = require("url");
 var whoAmI = require("./logic/whoAmI");
 
 
@@ -21,7 +22,7 @@ app.get("/", function(req, res){
   
   var cfg = req.config;
   
-  cfg.sheerApi = path.resolve(__dirname + "/api");
+  cfg.sheerApi = url.path + "/api";
   res.render("index", cfg);
 });
 
