@@ -22,7 +22,7 @@ app.get("/", function(req, res){
   
   var cfg = req.config;
   
-  cfg.sheerApi = url.path + "/api";
+  cfg.sheerApi = "./api";
   res.render("index", cfg);
 });
 

@@ -8,16 +8,28 @@
   </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #eee;
+    }
+  </style>
 </head>
 <body>
- 
-  <ul>
-    <li>Your ip: {{ipAdress}}</li>
-    <li>Your os: {{os}}</li>
-    <li>Language: {{language}}</li>
-  </ul>
+  <div class="container">
+    <h1 class="header">Basic client info microservice</h1><br>
+    <blockquote class="alert-info">
+        Your Info:
+        <ul>1.) Your ip: {{ipAdress}}</ul>
+        <ul>2.) Your os: {{os}}</ul>
+        <ul>3.) Language: {{language}}</ul>
+     
+    </blockquote>
+    <h3>For a sheer API output, connect to <a href={{sheerApi}}>here</a></h3>
+    <h3>Sample output: </h2>
+    <code>{"ipAdress":"257.257.257","language":"sw-ahili","os":"PureBananas NT 10.0; WOW128; rv:409.0"}</code>
   
-  <p>For a sheer API output, connect to <a href={{sheerApi}}>{{sheerApi}}</a></p>
-  
+  </div>
+    
+
 </body>
 </html>
